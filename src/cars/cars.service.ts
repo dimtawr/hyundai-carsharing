@@ -28,7 +28,7 @@ export class CarsService {
     if (licensePlateValid) {
       try {
         await this.db
-          .query(`INSERT INTO cars values ($1)`, [licensePlate])
+          .query(`INSERT INTO cars values ($1)`, [licensePlate.toUpperCase()])
           .then((result) => result.rows.map((row) => new ICars(row)));
         return data;
       } catch (err) {
