@@ -104,7 +104,7 @@ Format response:
   "fromDate": "Date",
   "toDate": "Date",
   "duration": "Number",
-  "price": Number,
+  "price": "Number",
   "carsBlockedFrom": "Date",
   "carsBlockedTo": "Date"
 }
